@@ -1,0 +1,76 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(#000000 50%,#00BC7D 50%);
+}
+
+h1{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.scoreboard{
+    background-color: #1E1E20;
+    width: min(50%, 35em);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    padding: 3em;
+    border-radius: 1em;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center ;
+}
+.team{
+    background-color:#313435 ;
+    align-items: center;
+    padding: 2em;
+    border-radius: 1em;
+}
+button{
+    cursor: pointer;
+}
+
+#reset{
+  background-color: transparent;
+    border: #00BC7D 2px solid;
+    color: #00BC7D;
+    width: 5em;
+    height: 5em;
+     border-radius: 1em;
+}
+
+.team h2{
+    color: #00BC7D;
+}
+.team p{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+.btn_cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background-color: #00BC7D;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 0.3em 0.7em;
+    font-weight: 600;
+
+}
