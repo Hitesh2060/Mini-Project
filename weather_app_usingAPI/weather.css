@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: white;
+    width: 400px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 10px;  
+}
+
+.search_box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_box input{
+    width: 80%;
+    font-size: 1rem;
+    /* color: black; */
+    background-color: rgb(206, 240, 240);
+    padding: 5px 14px;
+    border-radius: 10px;
+}
+
+.search_box input::placeholder{
+    color: black;
+}
+
+.search_box button{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(206, 240, 240);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.search_box button:hover{
+    color: white;
+    background-color: #baccd4;
+}
+
+.weather_body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 30px;
+    display: none;
+}
+
+.weather_body img{
+    width: 60%;
+}
+
+.weather_box{
+    text-align: center;
+    margin-block: 20px;
+}
+
+.weather_box .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+.weather_box .temperature sup{
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+}
+
+.weather_box .description{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.weather_details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.Humidity, .wind{
+    display: flex;
+    align-items: center;
+}
+
+.Humidity{
+    margin-left: 20px;
+}
+.wind{
+    margin-right: 20px;
+}
+
+.weather_details i{
+    font-size: 36px;
+}
+
+.weather_details .text{
+    margin-left: 10px;
+    font-size: 16px;   
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.location_notfound{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.location_notfound h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin-inline: 14px;
+    color: #a3c1ce;
+}
+
+.location_notfound img{
+    width: 80%;
+}
